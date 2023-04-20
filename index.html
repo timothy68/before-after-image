@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Before/After Image</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="image-container">
+          <img
+            class="image-before slider-image"
+            src="./images/before.jpg"
+            alt="Before image"
+            height="auto"
+          />
+          <img
+            class="image-after slider-image"
+            src="./images/after.jpg"
+            alt="After image"
+            height="auto"
+          />
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="slider"
+          aria-label="Percentage of before photo"
+        />
+        <div class="slider-line"></div>
+        <div class="slider-button" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+          width="30" height="30" fill="currentColor">
+            <rect width="256" height="256" fill="none" />
+            <line
+              x1="128"
+              y1="40"
+              x2="128"
+              y2="216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+            <line
+              x1="16"
+              y1="128"
+              x2="96"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+            <polyline
+              points="64 96 96 128 64 160"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+            <line
+              x1="240"
+              y1="128"
+              x2="160"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+            <polyline
+              points="192 160 160 128 192 96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
