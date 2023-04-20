@@ -1,2 +1,2 @@
 # before-after-image
-Today we’ll build a simple before/after image slider that’s accessible via the keyboard and provides an accessible readout when using assistive technology.
+Today we will implement before/after functionality with images by combining HTML, CSS, and js. The source is available for your reference.
